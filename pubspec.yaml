@@ -1,0 +1,36 @@
+name: dual_camera_plus_flutter
+description: Simultaneous front and back dual camera recording and photo capture with hardware-accelerated live preview, composited layouts, and focus/exposure control for Flutter.
+version: 1.0.0
+homepage: https://github.com/hoangsang17th/dual_camera_plus_flutter
+repository: https://github.com/hoangsang17th/dual_camera_plus_flutter
+issue_tracker: https://github.com/hoangsang17th/dual_camera_plus_flutter/issues
+
+topics:
+  - camera
+  - dual-camera
+  - video-recording
+  - metal
+  - camerax
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.romanslack.dual_cameras_android
+        pluginClass: DualCamerasPlugin
+      ios:
+        pluginClass: DualCamerasPlugin
